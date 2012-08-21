@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Machine Learning</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="./../assets/berry/css/main.css">
+<link rel="stylesheet" href="./../assets/berry/css/course-cs229.css">
+<script type="text/javascript" src="./../assets/berry/js/jquery.js"></script>
+<script type="text/javascript" src="./../assets/berry/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+</head>
+
+    <body>
+
+		<div id="container">
+
+			<div id="header" onclick="window.location='http://www.ml-class.org/course/class/index'">
+				<div id="header_links">
+                	<a href="http://www.ml-class.org/course/auth/reportbug?info=4359fee80c0a8cfe51cf16cdb31ff9808a051d4a%7CnY7EE55AOgjVckmefPRleZqTwoAQPvkHaNyVQXthjIPIIujTNLPK%2Bwo1dDkBy0GPjkp6o459%2Fu%2B3KpDF6lfpzZEAMrLrxAwLVMIKn4OzAtNMFMN%2BA3Wlt0rtF2Ly0zz9NhIzPWQZDH5Dw1jsgdn5UQDl7mDsvYMWV1%2FirVv4jy0w697D%2BobBe2bQ6LbUvJxz0LsxL%2FP5XhUdLiFc20h8RHhmhRIJAWKsiWtHfdvs944dwKlX7%2BfZBAxcamBvvOCrghQPDSp62vJitQplDw%2F2mv3bs2Wu4sjN9MMvgv7enoo01vIdjiSHfu0q7XJG8sXU0IKIVtlILCxxGHCYfvjUYQKzMMrp6%2FDUNrz9SEm4yAkkPM55NOCBTtNGCnJFG9E%2Bkgef4W9kz5uW8%2Fnu7YoE1gJVnOaygumt7ibEIKPdN1g%3D">Feedback</a>&nbsp;&nbsp;&nbsp;					<a href="http://www.ml-class.org/course/class/preferences">Preferences</a>		            &nbsp;&nbsp;&nbsp;
+		            <a href="http://www.ml-class.org/course/auth/logout">Logout</a>				</div>
+			</div>
+
+			<div id="content_body">
+
+				<div id="navbar">
+					<p class="navbar_item navbar_person">Bryan Wolfford</p>
+                    <p class="navbar_item navbar_home"><a href="http://www.ml-class.org/course/class/index">Home</a></p>
+                    <p class="navbar_item navbar_progress"><a href="http://www.ml-class.org/course/class/progress">Course Progress</a></p>					<p class="navbar_item navbar_video"><a href="http://www.ml-class.org/course/video/list">Video Lectures</a></p>
+                    <p class="navbar_item navbar_homeworks"><a href="http://www.ml-class.org/course/homework/list">Programming Exercises</a></p><p class="navbar_item navbar_quizzes"><a href="http://www.ml-class.org/course/quiz/list?type=quiz">Review Questions</a></p>
+					<p class="navbar_item navbar_qna"><a href="http://www.ml-class.org/course/qna/index">Q&amp;A Forum</a></p>
+                    <p class="navbar_item navbar_resources"><a href="/course/resources/index?page=course-schedule">Course Schedule</a></p><p class="navbar_item navbar_resources"><a href="/course/resources/index?page=course-materials">Course Materials</a></p><p class="navbar_item navbar_resources"><a href="/course/resources/index?page=course-info">Course Information</a></p><p class="navbar_item navbar_resources"><a href="/course/resources/index?page=octave-install">Octave Installation</a></p>					<p class="navbar_item navbar_aboutus"><a href="http://www.ml-class.org/course/aboutus/index">About Us</a></p>
+				</div>
+
+				<div id="content">
+
+                    <style type="text/css"> 
+.section_container {
+    clear: both;
+    padding: 5px 15px 15px 15px;
+    border: 1px solid #999;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-bottom: 13px;
+}
+
+.section_item {
+    border-bottom: 1px solid #999;
+    padding: 10px 0px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+.section_text {
+    font-weight: bold;
+    font-size: 125%;
+    display: inline;
+    margin-left: 5px;
+    margin-top: 15px;
+    float: left;
+}
+
+.section_download {
+    display: inline;
+    padding-left: 10px;
+    float:right;
+}
+
+.section_date {
+    font-weight: bold;
+    font-size:115%;
+}
+
+.section_lectures {
+    display: inline;
+    float: left;
+    width: 300px;
+}
+
+.section_duedates {
+    display: inline;
+    float: right;
+    width: 300px;
+}
+
+</style>
+
+<div id="content">
+  <h1>Course Schedule</h1>
+  <div class="section_container">
+
+
+    <div class="section_item">
+      <div class="section_date">
+        10th - 16th October
+      </div>
+      <div class="section_lectures">
+        <ul>
+          <li>Introduction</li>
+          <li>Linear regression with one variable</li>
+          <li>(Optional) Linear algebra review</li>
+        </ul>
+      </div>
+      <div class="section_duedates">
+        <b>Due 16 Oct 23:59:59 PDT</b>
+        <ul>
+           <li>Review Questions (for the week's topics)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section_item">
+      <div class="section_date">
+        17th - 23rd October
+      </div>
+      <div class="section_lectures">
+        <ul>
+          <li>Linear regression with multiple variables</li>
+          <li>Octave tutorial</li>
+        </ul>
+      </div>
+      <div class="section_duedates">
+        <b>Due 23 Oct 23:59:59 PDT</b>
+        <ul>
+           <li>Review Questions (for the week's topics)</li>
+           <li>Programming Exercise 1 <br /> (Linear regression)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section_item">
+      <div class="section_date">
+        24th - 30th October
+      </div>
+      <div class="section_lectures">
+        <ul>
+          <li>Logistic Regression</li>
+          <li>One-vs-all Classification</li>
+          <li>Regularization</li>
+        </ul>
+      </div>
+      <div class="section_duedates">
+        <b>Due 30 Oct 23:59:59 PDT</b>
+        <ul>
+           <li>Review Questions (for the week's topics)</li>
+           <li>Programming Exercise 2 <br /> (Logistic regression)</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="section_item">
+      <div class="section_date">
+        31st October - 6th November
+      </div>
+      <div class="section_lectures">
+        <ul>
+          <li>Neural Networks</li>
+          <li>Backpropagation Algorithm</li>
+        </ul>
+      </div>
+      <div class="section_duedates">
+        <b>Due 6 Nov 23:59:59 PDT</b>
+        <ul>
+           <li>Review Questions (for the week's topics)</li>
+           <li>Programming Exercise 3 <br /> (Neural Networks)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section_item">
+      <div class="section_date">
+        7th - 13th November
+      </div>
+      <div class="section_lectures">
+        <ul>
+          <li>Support Vector Machines (SVMs)</li>
+          <li>Survey of other algorithms: Naive Bayes, Decision Trees, Boosting</li>
+        </ul>
+      </div>
+      <div class="section_duedates">
+        <b>Due 13 Nov 23:59:59 PDT</b>
+        <ul>
+           <li>Review Questions (for the week's topics)</li>
+           <li>Programming Exercise <br /> (Support Vector Machines)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section_item">
+      <div class="section_date">
+        14th - 20th November
+      </div>
+      <div class="section_lectures">
+        <ul>
+          <li>Practical advise for applying learning algorithms</li>
+          <li>How to develop and debug learning algorithms</li>
+          <li>Feature and model design, setting up experiments</li>
+        </ul>
+      </div>
+      <div class="section_duedates">
+        <b>Due 20 Nov 23:59:59 PDT</b>
+        <ul>
+           <li>Review Questions (for the week's topics)</li>
+           <li>Programming Exercise (TBA)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section_item">
+      <div class="section_date">
+        21st - 27th November
+      </div>
+      <div class="section_lectures">
+        <ul>
+          <li>Unsupervised learning: Agglomerative clustering, k-Means, PCA</li>
+          <li>(Optional) Idependent component analysis</li>
+        </ul>
+      </div>
+      <div class="section_duedates">
+        <b>Due 27 Nov 23:59:59 PDT</b>
+        <ul>
+           <li>Review Questions (for the week's topics)</li>
+           <li>Programming Exercise (TBA)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section_item">
+      <div class="section_date">
+        28th November - 4th December
+      </div>
+      <div class="section_lectures">
+        <ul>
+          <li>Anomaly detection</li>
+          <li>Combining unsupervised and supervised learning.</li>
+        </ul>
+      </div>
+      <div class="section_duedates">
+        <b>Due 4 Dec 23:59:59 PDT</b>
+        <ul>
+           <li>Review Questions (for the week's topics)</li>
+           <li>Programming Exercise (TBA)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section_item">
+      <div class="section_date">
+        5th - 11th December
+      </div>
+      <div class="section_lectures">
+        <ul>
+          <li>Other applications: Recommender systems. Learning to rank</li>
+        </ul>
+      </div>
+      <div class="section_duedates">
+        <b>Due 11 Dec 23:59:59 PDT</b>
+        <ul>
+           <li>Review Questions (for the week's topics)</li>
+           <li>Programming Exercise (TBA)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section_item">
+      <div class="section_date">
+        12th - 16th December
+      </div>
+      <div class="section_lectures">
+        <ul>
+          <li>Large-scale/parallel machine learning and big data.</li>
+          <li>Machine learning design / practical methods</li>
+          <li>Team design of machine learning systems</li>
+        </ul>
+      </div>
+      <div class="section_duedates">
+        <b>Due 16 Dec 23:59:59 PDT</b>
+        <ul>
+           <li>Review Questions (for the week's topics)</li>
+           <li>Programming Exercise (TBA)</li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<br />
+<br />
+
+				</div> <!-- content -->
+
+            </div> <!-- content-body -->
+
+		</div> <!-- container -->
+
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4245877-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	</body>
+
+</html>
+
+
